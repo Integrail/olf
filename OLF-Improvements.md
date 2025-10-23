@@ -469,6 +469,7 @@ interface OlfPlugin {
     // Lifecycle hooks
     onInstall?(api: OlfAPI): Promise<void>;
     onUninstall?(): Promise<void>;
+    
     onDocumentOpen?(doc: OlfDocument): void;
     onDocumentClose?(doc: OlfDocument): void;
     
